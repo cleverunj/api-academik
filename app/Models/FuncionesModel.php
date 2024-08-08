@@ -17,6 +17,7 @@ class FuncionesModel extends Model
         $data = "0000000001";
         $data = substr($data, floatval($cont));
         if (isset($row)) {
+
             $cad = floatval($row->$principal) + 1;
             $data = "000000000" . $cad;
             $data = substr($data, floatval($cont));
