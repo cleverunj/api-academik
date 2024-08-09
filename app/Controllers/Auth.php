@@ -16,8 +16,6 @@ class Auth extends ResourceController
 
     public function auth()
     {
-
-
         $data = json_decode(file_get_contents('php://input'));
         $msg = " El usuario o password son incorrectos";
         if ($data->nivel == '' or $data->usuario == '' or $data->password == '') {
