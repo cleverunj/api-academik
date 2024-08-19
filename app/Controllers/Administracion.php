@@ -9,6 +9,13 @@ class Administracion extends BaseController
 {
     private function tabla($data)
     {
+        if ($data->modulo=="local"){
+            return array(
+                'tabla' => "aca_local",
+                'id' => "local",
+                'principal' => "descripcion"
+            );
+        }
         if ($data->modulo=="beca"){
             return array(
                 'tabla' => "aca_beca",
@@ -63,6 +70,13 @@ class Administracion extends BaseController
                 'tabla' => "aca_modalidadingreso",
                 'id' => "modalidadingreso",
                 'principal' => "descripcion"
+            );
+        }
+        if ($data->modulo=="tupa"){
+            return array(
+                'tabla' => "aaa_tupa",
+                'id' => "nro",
+                'principal' => "concepto"
             );
         }
     }

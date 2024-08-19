@@ -40,6 +40,7 @@ class Filters extends BaseConfig
             'auth' => ['except' =>
             [
                 'auth/auth',
+                'auth/verifyToken',
             ]],
             //'home/cerrar',
             // 'honeypot',

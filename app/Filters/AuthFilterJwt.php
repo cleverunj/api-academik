@@ -18,6 +18,7 @@ class AuthFilterJwt implements FilterInterface
     {
         $key = Services::getSecretKey();
         $authHeader=$request->getServer('HTTP_AUTHORIZATION');
+       
 		$parts        = explode(' ', $authHeader);
 
         try{
